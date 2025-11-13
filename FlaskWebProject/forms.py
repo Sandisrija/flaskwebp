@@ -16,4 +16,4 @@ class PostForm(FlaskForm):
     author = StringField('Author', validators=[DataRequired()])
     body = TextAreaField('Body', validators=[DataRequired()])
     image_path = FileField('Image', validators=[FileAllowed(['jpg', 'png'], 'Images only!')])
-    submit = SubmitField('Save')
+    submit = SubmitField('Save') 
